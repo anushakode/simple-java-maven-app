@@ -5,7 +5,7 @@ env:
   MVN_ARGS: clean install --batch-mode --update-snapshots verify
   CONTINUE_ON_ERROR: false
   CONTINUE_ON_ERROR_SETUP: true
-  JOB_STATUS_CODE: 0
+  JOB_STATUS_CODE: 0  
 
 on:
   push:
