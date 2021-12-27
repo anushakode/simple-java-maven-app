@@ -1,4 +1,4 @@
-name: java manven CI
+ - name: JAVA MAVEN CI
 on:
 
 push:
