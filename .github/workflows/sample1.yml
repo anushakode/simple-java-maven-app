@@ -1,3 +1,4 @@
+name: java manven CI
 on:
 
 push:
