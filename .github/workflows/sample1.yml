@@ -1,10 +1,9 @@
- -name: JAVA MAVEN CI
+-name: JAVA MAVEN CI
 on:
 
 push:
 
 branches: [ master ]
-
 
 
 
