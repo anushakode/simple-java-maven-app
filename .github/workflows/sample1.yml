@@ -51,8 +51,9 @@ jobs:
     - name: Sonar API call
       run: |
           curl --location --request GET 'https://sonarcloud.io/api/measures/component?metricKeys=code_smells,coverage,duplicated_lines_density,vulnerabilities,security_hotspots,critical_violations,bugs&component=anushakode_simple-java-maven-app' --header 'Authorization:Bearer ${{ secrets.SONAR_TOKEN}}'
-          echo ${{ secrets.SONAR_TOKEN}} |sed 's/./& /g'
-       
+        
+      env:
+        KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}' 
     - name: Storing artifacts1
       uses: actions/upload-artifact@v2
       with:
