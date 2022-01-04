@@ -1,4 +1,4 @@
-name: PRCleanup
+name: PRCleanup setup
 on:
   pull_request:
     types: [closed]
