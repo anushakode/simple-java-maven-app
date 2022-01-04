@@ -31,12 +31,14 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
     - name: 'Deploy'
       uses: 'deliverybot/helm@v1'
-     # with:
+      with:
         # Task remove means to remove the helm release.
-       # task: 'remove'
-       # release: 'review-myapp-${{ github.event.pull_request.number }}'
-       # version: '${{ github.sha }}'
-        #track: 'stable'
-        #chart: 'app'
-        #namespace: 'example-helm'
-       # token: '${{ github.token }}'
+        task: 'remove'
+        release: 'review-myapp-${{ github.event.pull_request.number }}'
+        version: '${{ github.sha }}'
+        track: 'stable'
+        chart: 'app'
+        namespace: 'example-helm'
+        token: '${{ github.token }}'
+      env:
+        KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}'
