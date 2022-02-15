@@ -7,7 +7,7 @@ jobs:
   
   build:
     #if: github.ref == 'ref:master'
-    if: ${{ github.ref != 'master'}}
+    if: ${{ github.ref == 'master' && github.ref == 'manual_work'}}
     #run: echo This event is a pull request that had an assignee removed.
     runs-on: ubuntu-latest
     
