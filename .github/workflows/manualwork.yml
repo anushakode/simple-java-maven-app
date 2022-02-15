@@ -2,12 +2,14 @@ name: Manual work
 
 on:
   workflow_dispatch:
+  
 jobs:
   build:
-    if: github.ref == 'manual_work'
+   
     runs-on: ubuntu-latest
  
     steps:
+    #- uses: ref:master/actions/checkout@v2
     - uses: actions/checkout@v2
     - name: Set up JDK 11
       uses: actions/setup-java@v2
