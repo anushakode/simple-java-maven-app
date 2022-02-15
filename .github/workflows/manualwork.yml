@@ -15,7 +15,7 @@ on:
 jobs:
   
   build:
-    if: github.ref == 'ref:master'
+    if: github.ref == 'master'
     runs-on: ubuntu-latest
  
     steps:
