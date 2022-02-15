@@ -7,13 +7,13 @@ jobs:
   
   build:
     #if: github.ref == 'ref:manual_work1'
-    #if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
+    if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
    # if: ${{ github.ref == 'manual_work1' && github.ref == 'manual_work'}}
     #run: echo This event is a pull request that had an assignee removed.
     runs-on: ubuntu-latest
  
     steps:
-    - uses: ref:master/actions/checkout@v2
+    #- uses: ref:master/actions/checkout@v2
  
     - uses: actions/checkout@v2
     - name: Set up JDK 11
