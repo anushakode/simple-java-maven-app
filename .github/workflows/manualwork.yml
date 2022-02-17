@@ -1,5 +1,4 @@
 name: Manual work
-
 on:
   workflow_dispatch:
   
