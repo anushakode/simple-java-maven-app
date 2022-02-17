@@ -1,4 +1,4 @@
-name: Manual Work1
+name: Manual Work
 on:
   workflow_dispatch:
   
@@ -18,23 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up JDK 11
       uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'adopt'
-        cache: maven
-    #- name: Build with Maven
-     # run: |
-        #    mvn -B package --file pom.xml
-         #   mkdir staging && cp target/*.jar staging
            
-    - name: cache for maven
-      uses: actions/cache@v2
-      with: 
-          path: -/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
+
+
 Stat
