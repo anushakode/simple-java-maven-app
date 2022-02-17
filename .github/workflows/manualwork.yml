@@ -6,7 +6,7 @@ on:
 jobs:
   
   build:
-    if: github.ref == 'master'
+    if: github.ref == 'manual_work'
     #if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
    # if: ${{ github.ref == 'manual_work1' && github.ref == 'manual_work'}}
     #run: echo This event is a pull request that had an assignee removed.
@@ -33,3 +33,8 @@ jobs:
           path: -/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Stat
