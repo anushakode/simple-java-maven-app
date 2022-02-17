@@ -6,7 +6,7 @@ name: Manually triggered workflow
         name:
           description: 'Person to greet'
           required: true
-          default: 'Mona the Octocat'
+          default: 'Mona the Octocat hi'
 
         home:
           description: 'location'
