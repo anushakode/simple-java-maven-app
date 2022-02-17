@@ -2,9 +2,9 @@ name: SimpleManualWork
 on:
   workflow_dispatch:
   
-  push:
-    branches:
-      - master
+ # push:
+   # branches:
+     # - master
       #- manual_work
       #- manual_work1
   
