@@ -11,6 +11,11 @@ on:
 jobs:
   
   build:
+    #if: github.ref == 'ref/heads/manual_work'
+    #echo "${{ github.REF}}"
+    #if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
+    # if: ${{ github.ref == 'manual_work1' && github.ref == 'manual_work'}}
+    #run: echo This event is a pull request that had an assignee removed.
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
  
