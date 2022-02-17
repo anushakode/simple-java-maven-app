@@ -1,0 +1,19 @@
+name: SimpleManualWork
+on:
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - master
+      - manual_work
+      - manual_work1
+  
+jobs:
+  
+  build:
+    if: github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+ 
+    steps:
+    #- uses: ref:master/actions/checkout@v2
+     - uses: actions/checkout@v2
