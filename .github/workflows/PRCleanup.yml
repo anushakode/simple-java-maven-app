@@ -1,4 +1,4 @@
-name: PRCleanup setup
+name: PRCleanup setup1
 on:
   push:
     branches: [ master ]
