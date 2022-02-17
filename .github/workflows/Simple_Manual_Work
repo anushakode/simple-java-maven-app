@@ -1,7 +1,7 @@
 name: SimpleManualWork
 on:
   push
-  branches: main
+  branches: [master]
   
 jobs:
   
