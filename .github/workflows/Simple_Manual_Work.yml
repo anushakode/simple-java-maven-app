@@ -11,6 +11,7 @@ on:
 jobs:
   
   build:
+    if: github.ref == 'refs/heads/manual_work'
     runs-on: ubuntu-latest
  
     steps:
