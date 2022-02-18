@@ -17,7 +17,7 @@ jobs:
     # if: ${{ github.ref == 'manual_work1' && github.ref == 'manual_work'}}
     #run: echo This event is a pull request that had an assignee removed.
     if: github.ref != 'refs/heads/master'
-    runs-on: ubuntu-latest && echo "The selected color is green"
+    runs-on: echo "The selected color is green" && ubuntu-latest 
     
  
     steps:
