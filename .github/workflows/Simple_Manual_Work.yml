@@ -12,7 +12,8 @@ jobs:
   
   build:
     if: github.ref != 'refs/heads/master'
-    runs-on: echo "colour is green" && ubuntu-latest
+    runs-on: ubuntu-latest
+     echo "colour is green" 
  
     steps:
     #- uses: ref:master/actions/checkout@v2
