@@ -10,7 +10,7 @@ on:
   
 jobs:
   
-  build:
+  Enable-for-feature-brach:
     #if: github.ref == 'ref/heads/manual_work'
     #echo "${{ github.REF}}"
     #if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
@@ -22,5 +22,7 @@ jobs:
     
  
     steps:
-    #- uses: ref:master/actions/checkout@v2
-     - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: anusha
+        run: |
+            echo "this workflow enable for feature branch"
