@@ -24,6 +24,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: anusha
         run: |
-          echo "::set-output name=action_fruit::strawberry"
+            echo "this workflow enable for feature branch"
+        
 
       
