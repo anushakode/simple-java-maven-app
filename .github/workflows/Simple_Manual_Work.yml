@@ -11,7 +11,7 @@ on:
   
 jobs:
   
-  Enable-for-feature-branch:
+  Disable-for-master-branch:
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
  
@@ -22,9 +22,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: anusha
+      - name: Disable for Master branch
         run: |
-            echo "this workflow enable for feature branch"
+            echo "This workflow is disable for Master branch"
         
 
       
