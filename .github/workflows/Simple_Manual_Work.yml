@@ -8,21 +8,32 @@ on:
       #- manual_work
       #- manual_work1
   
-jobs:
+#jobs:
   
-  Enable-for-feature-brach:
+  #Disable-for-master-brach:
     #if: github.ref == 'ref/heads/manual_work'
     #echo "${{ github.REF}}"
     #if: ${{ github.ref == 'ref:manual_work1' && github.ref == 'ref:manual_work'}}
     # if: ${{ github.ref == 'manual_work1' && github.ref == 'manual_work'}}
     #run: echo This event is a pull request that had an assignee removed.
-    if: github.ref != 'refs/heads/master'
-    runs-on: ubuntu-latest
+    #if: github.ref != 'refs/heads/master'
+   # runs-on: ubuntu-latest
      #echo "The selected color is green" 
     
  
+jobs:
+  
+  Disable-for-master-branch:
+    if: github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+ 
+#jobs:
+   #This-worflow-is-enable-for-feature-brach-only:
+   # if: github.ref != 'refs/heads/master
+    #runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
-      - name: anusha
+      - name: Disable for Master branch
         run: |
-            echo "this workflow enable for feature branch"
+            echo "This workflow is disable for Master branch"
