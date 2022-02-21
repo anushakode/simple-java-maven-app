@@ -21,8 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: disable workflow commands
+      - name: anusha
         run: |
-          echo '::warning:: this is a warning'
+          echo "::set-output name=action_fruit::strawberry"
 
       
