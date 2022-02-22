@@ -1,5 +1,7 @@
 name: 'foooooo'
 on:
+  workflow_dispatch:
+  
   pull_request:
     branches-ignore:
     - master
