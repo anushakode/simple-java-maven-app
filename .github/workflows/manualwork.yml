@@ -1,11 +1,12 @@
 name: 'foooooo'
 on:
-  push:
-    branches:
-      - master
+  on:
   pull_request:
-env:
-  SOME_THING: sweet
+    branches-ignore:
+    - master
+  push:
+    branches-ignore:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
