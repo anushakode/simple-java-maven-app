@@ -2,8 +2,10 @@ name: SimpleManualWork
 on:
 
   workflow_dispatch:
-  #push:
+  push:
     # if: "!contains(github.event.commits[0].message, '[skip ci]')"
+    branches: [skip ci]
+    
    
 
   
@@ -27,8 +29,8 @@ jobs:
     if: github.ref != 'refs/heads/master'
      
     #if: "!contains(github.event.commits[0].message, '[skip ci]')"
-    #runs-on: ubuntu-latest
-    runs-on: [skip ci]
+    runs-on: ubuntu-latest
+    #runs-on: [skip ci]
    
 #jobs:
    #This-worflow-is-enable-for-feature-brach-only:
